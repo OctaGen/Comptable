@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:costum="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/drawer_item_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iconImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:transitionName="menuAnim"
+        tools:src="@mipmap/ic_buy"/>
+
+    <com.octagen.customviews.CustomTextView
+        android:id="@+id/itemLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iconImage"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        costum:Arabic="المخزون"
+        costum:Font="cgr.ttf"
+        costum:Frensh="Stock"
+        costum:Size="15"
+        tools:text="Stock"/>
+</RelativeLayout>

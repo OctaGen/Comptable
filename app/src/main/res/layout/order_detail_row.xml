@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/order_detail_item_border"
+                android:padding="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorOrderDetailBackground"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/iphone"/>
+
+        <TextView
+            android:id="@+id/productNameLabel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="35"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:textColor="#000000"
+            tools:text="Samsung Galaxy S7"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/quantity"
+                android:textColor="@color/colorPriceText"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/quantityLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textColor="@color/colorPriceText"
+                tools:text="100"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/priceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:background="@drawable/price_tag_background"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="6dp"
+                android:textColor="@color/colorWhite"
+                tools:text="8000 DH"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

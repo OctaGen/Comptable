@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2260">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="800"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back_client_horizontal"
+            android:transitionName="menuAnim"/>
+
+        <LinearLayout
+            android:id="@+id/mainRootView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1460"
+            android:orientation="vertical"
+            android:weightSum="1182">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="80"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="172"
+                android:orientation="horizontal"
+                android:scaleX="0.01"
+                android:scaleY="0.01"
+                android:weightSum="1440">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="120"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1196"
+                    android:background="@drawable/client_add_style"
+                    android:orientation="horizontal"
+                    android:weightSum="956">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        ></RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="140">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/userclient"/>
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/nomcomletclient"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="780"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/fullname"
+                        android:inputType="textCapWords"
+                        android:textColorHint="#9ea1a3"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="172"
+                android:orientation="horizontal"
+                android:scaleX="0.01"
+                android:scaleY="0.01"
+                android:weightSum="1440">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="120"
+                    ></RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1196"
+                    android:background="@drawable/client_add_style"
+
+                    android:orientation="horizontal"
+                    android:weightSum="956"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        ></RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="140"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/tel2cl"
+                            />
+
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/numtel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="780"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/phone_number"
+
+                        android:inputType="phone"
+                        android:textColorHint="#9ea1a3"
+                        android:textSize="20sp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="172"
+                android:orientation="horizontal"
+                android:scaleX="0.01"
+                android:scaleY="0.01"
+                android:weightSum="1440">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="120"
+                    ></RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1196"
+                    android:background="@drawable/client_add_style"
+
+                    android:orientation="horizontal"
+                    android:weightSum="956"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        ></RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="140"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/adresseclient"
+                            />
+
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/adresse"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="780"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/address"
+
+                        android:inputType="textPostalAddress"
+                        android:textColorHint="#9ea1a3"
+                        android:textSize="20sp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="172"
+                android:orientation="horizontal"
+                android:scaleX="0.01"
+                android:scaleY="0.01"
+                android:weightSum="1440">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="120"
+                    ></RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1196"
+                    android:background="@drawable/client_add_style"
+
+                    android:orientation="horizontal"
+                    android:weightSum="956"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        ></RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="140"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/emailclient"
+                            />
+
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="780"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/email"
+
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="#9ea1a3"
+                        android:textSize="20sp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="110">
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="180"
+                android:orientation="horizontal"
+                android:weightSum="1440"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="120"/>
+
+                <Button
+                    android:id="@+id/addClient"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1196"
+                    android:background="@drawable/save_btn"
+                    android:text="@string/save"
+                    android:textColor="@color/colorWhite"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onBackArrowPressed"
+        android:src="@drawable/ic_back_arrow"/>
+
+</RelativeLayout>

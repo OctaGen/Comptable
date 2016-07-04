@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:costum="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                tools:background="#9e9e9e">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/iphone"
+        android:transitionName="productImageAnim"/>
+
+    <TextView
+        android:id="@+id/colorFilterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/productLabel"
+        android:alpha="0.6"
+        android:background="@color/colorBlue"
+        android:textColor="#ffffff"
+        android:textSize="12sp"/>
+
+    <com.octagen.customviews.CustomTextView
+        android:id="@+id/productLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlue"
+        android:gravity="left|bottom"
+        android:padding="10dp"
+        android:shadowColor="#000000"
+        android:alpha="0.8"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textColor="#ffffff"
+        android:transitionName="productLabelAnim"
+        costum:Arabic=""
+        costum:Font="cgrb.ttf"
+        costum:Frensh=""
+        costum:Size="12"
+        tools:text="Samsung Galaxy S7"/>
+
+    <TextView
+        android:id="@+id/quantityLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        tools:text="215"/>
+
+</RelativeLayout>

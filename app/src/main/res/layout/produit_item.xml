@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:costum="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.octagen.customviews.CustomHeightLayout
+            android:id="@+id/Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            costum:size="31">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="79">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"></RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="75"
+                    android:orientation="horizontal"
+                    android:weightSum="360">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="350"
+                        android:background="@drawable/item_info"
+                        android:orientation="horizontal"
+                        android:weightSum="350">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="75">
+
+                            <com.octagen.customviews.CustomCarreLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="#3d5469"
+                                costum:size="25">
+
+                                <com.octagen.customviews.CustomCarreLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    costum:size="24">
+
+                                    <ImageView
+                                        android:id="@+id/Image"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/iphone"
+                                        android:transitionName="productImageAnim"/>
+
+                                </com.octagen.customviews.CustomCarreLayout>
+
+                            </com.octagen.customviews.CustomCarreLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="122">
+
+                            <com.octagen.customviews.CustomTextView
+                                android:id="@+id/Libelle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textColor="#444444"
+                                android:transitionName="productLabelAnim"
+                                costum:Arabic=""
+                                android:gravity="center"
+                                costum:Font="cgr.ttf"
+                                costum:Frensh=""
+                                costum:Size="12"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="80">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <com.octagen.customviews.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="#444444"
+                                    costum:Arabic="Stock"
+                                    costum:Font="cgrb.ttf"
+                                    costum:Frensh="Stock"
+                                    costum:Size="15"/>
+
+                                <com.octagen.customviews.CustomTextView
+                                    android:id="@+id/Qte"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textColor="#444444"
+                                    costum:Arabic=""
+                                    costum:Font="cgr.ttf"
+                                    costum:Frensh=""
+                                    costum:Size="14"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="73">
+
+                            <com.octagen.customviews.CustomTextView
+                                android:id="@+id/Prix"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/prix_bg"
+                                android:padding="3dp"
+                                android:textColor="#ffffff"
+                                costum:Arabic=""
+                                costum:Font="cgrb.ttf"
+                                costum:Frensh=""
+                                costum:Size="10"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.octagen.customviews.CustomHeightLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></RelativeLayout>
+
+        <com.octagen.customviews.CustomHeightLayout
+            android:id="@+id/Actions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            costum:size="15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="360">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"></RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="116"
+                    android:background="@drawable/action_show"
+                    android:clickable="true">
+
+                    <com.octagen.customviews.CustomTextView
+                        android:id="@+id/afficher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="#ffffff"
+                        costum:Arabic="Afficher"
+                        costum:Font="cgr.ttf"
+                        costum:Frensh="@string/show"
+                        costum:Size="12"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="116"
+                    android:background="@drawable/action_update"
+                    android:clickable="true">
+
+                    <com.octagen.customviews.CustomTextView
+                        android:id="@+id/modifier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="#ffffff"
+                        costum:Arabic="Modifier"
+                        costum:Font="cgr.ttf"
+                        costum:Frensh="@string/update"
+                        costum:Size="12"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="116"
+                    android:background="@drawable/action_delete"
+                    android:clickable="true">
+
+                    <com.octagen.customviews.CustomTextView
+                        android:id="@+id/supprimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="#ffffff"
+                        costum:Arabic="Supprimer"
+                        costum:Font="cgr.ttf"
+                        costum:Frensh="@string/remove"
+                        costum:Size="12"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </com.octagen.customviews.CustomHeightLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
