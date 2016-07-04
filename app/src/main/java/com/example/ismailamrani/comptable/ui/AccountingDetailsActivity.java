@@ -47,6 +47,7 @@ public class AccountingDetailsActivity extends AnimatedActivity {
     @Bind(R.id.plusButton)
     Button plusButton;
 
+    
     /**
      * This variable holds the ID of the locale whose details will be fetched & displayed.
      * It could be the ID of the current locale if the current user is a regular employee,
